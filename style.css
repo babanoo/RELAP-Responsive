@@ -414,6 +414,7 @@ padding-bottom: 55px;
   }
   .Feautures {
     padding: 40px 24px 32px;
+    cursor: pointer;
   }
   .fugiat-p {
     padding-bottom: 40px;
@@ -421,8 +422,39 @@ padding-bottom: 55px;
   .Feautures:hover {
     box-shadow: 16px 16px 48px 0px rgba(0, 0, 0, 0.1);
   }
+  .Feautures:hover>.Feautures-heading::after {
+    position: absolute;
+    content: "";
+    width: 135px;
+    height: 32px;
+    border-bottom: 8px solid rgba(200, 109, 215, 1);
+    top: 12%;
+    right: 29%;
+    z-index: -1;
+  }
+  .Feautures:hover>.consequuntur::after {
+    width: 180px;
+    right: 22%;
+  }
+  .Feautures:hover>.voluptatem::after {
+    width: 149px;
+    right: 27%;
+  }
+  .Feautures:hover>.aliquid::after {
+    width: 89px;
+    right: 36.70%;
+  }
+  .Feautures:hover>.excepteur::after {
+    width: 125px;
+    right: 31%;
+  }
+  .Feautures:hover>.accusamus::after {
+    width: 148px;
+    right: 27%;
+  }
   .Feautures-heading {
     padding: 13px 0 9px;
+    position: relative;
   }
   .officis {
     padding: 71px 0 89px;
