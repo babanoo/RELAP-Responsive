@@ -31,7 +31,11 @@ h2 {
     font-size: 56px;
     max-width: 570px;
     line-height: 64px;
-    padding: 18px 0 55px;
+    padding: 18px 0 0;
+}
+h3 {
+  font-weight: 700;
+  font-size: 24px;
 }
 footer {
     background-image: url(./images/footer-bg.png);
@@ -47,6 +51,7 @@ form {
 span {
   font-weight: 700;
   font-size: 16px;
+  text-transform: uppercase;
 }
 header {
   position: relative;
@@ -62,6 +67,30 @@ header::before {
   left: 79%;
   background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
   border-radius: 50%;
+}
+input[type=email] {
+  width: 370px;
+  height: 48px;
+  background-color: white;
+  color: rgba(51, 51, 51,);
+  padding: 12px 283px 12px 16px;
+  border: 1px solid rgba(218, 218, 218, 1);
+  
+  border-radius: 3px;
+  cursor: pointer;
+}
+input[type=submit] {
+  color: white;
+  padding: 12px 67px;
+}
+footer::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  left: 0;
+  top: 65%;
 }
 .container {
     max-width: 1199px;
@@ -92,6 +121,11 @@ header::before {
   display: flex;
   flex-direction: column;
 }
+.flx-start-col {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
 .justify-content-end {
     display: flex;
     justify-content: flex-end;
@@ -99,6 +133,11 @@ header::before {
 .flx-gap {
     display: flex;
     gap: 8px;
+}
+.flx-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .font-Poppins {
     font-family: Poppins;
@@ -128,6 +167,9 @@ header::before {
     font-weight: 700;
     font-size: 40px;
 }
+.hidden-header-menu {
+  display: none;
+}
 .base-bttn {
     font-weight: 700;
     font-size: 16px;
@@ -135,7 +177,6 @@ header::before {
     border-radius: 24px;
     text-align: center;
     border: none;
-    
 }
 .blue-bttn {
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -146,32 +187,39 @@ header::before {
 .purple-bttn {
     background: rgba(200, 109, 215, 1);
 }
-input[type=email] {
-    width: 370px;
-    height: 48px;
-    background-color: white;
-    color: rgba(51, 51, 51,);
-    padding: 12px 283px 12px 16px;
-    border: 1px solid rgba(218, 218, 218, 1);
-    
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  input[type=submit] {
-    color: white;
-    padding: 12px 67px;
-  }
-  footer::before {
-    position: absolute;
-    content: "";
-    height: 2px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
-    left: 0;
-    top: 65%;
-  }
+.width-570 {
+  max-width: 570px;
+}
+.width-322 {
+  max-width: 322px;
+}
+.width-470 {
+  max-width: 470px;
+  padding: 23px 0 48px;
+  line-height: 24px;
+}
+.center-text {
+  text-align: center;
+}
+.padding-bottm {
+  padding-bottom: 24px;
+}
+.padding-bttm-55 {
+  padding-bottom: 55px;
+}
   .omnis-voluptas {
     padding: 150px 0;
+    position: relative;
+  }
+  .omnis-voluptas::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/oval-twelve.png);
+    background-repeat: no-repeat;
+    top: -5%;
+    left: 112.50%;
   }
   .header-social-media {
     padding-bottom: 48px;
@@ -194,10 +242,6 @@ input[type=email] {
   .main-header::after {
     position: absolute;
     content: "";
-    width: 100%;
-    height: 78px;
-    top: 0;
-    right: 0;
     transform: translateY(-30%);
     bottom: 100%;
     left: 13.35%;
@@ -214,7 +258,7 @@ input[type=email] {
   }
   .omnis-p {
     max-width: 370px;
-    padding: 26px 0 34px;
+    padding: 26px 0 48px;
     color: rgba(255, 255, 255, 1);
     line-height: 24px;
   }
@@ -267,7 +311,7 @@ input[type=email] {
     content: "";
     background-image: url(./images/video-bg.png);
     top: 0%;
-    left: 55%;
+    left: 50%;
     transform: translateY(-68%);
   }
   .video-bg::after {
@@ -278,20 +322,178 @@ input[type=email] {
     content: "";
     background-image: url(./images/laborism.png);
     top: 0%;
-    left: 58%;
+    left: 53%;
     transform: translateY(-72%);
   }
   .transform {
     z-index: 999;
     position: relative;
-    left: 52%;
+    left: 46%;
     transform: translateY(-190%);
+  }
+  .ullam {
+    position: relative;
+    padding: 61px 0px 48px 0px;
+  }
+  .ullam::after {
+    position: absolute;
+    content: "";
+    width: 1440px;
+    height: 768px;
+    background-color: rgba(253, 242, 255, 1);
+    top: 0%;
+    z-index: -2;
+    left: 6%;
+  }
+  .ullam-menu {
+    width: 510px;
+  }
+  .ullam-paragraph {
+    line-height: 24px;
+  }
+  .exercitation {
+    gap: 9px;
+    padding-bottom: 26px;
+    padding-left: 35px;
+    margin: 42px 0 48px;
+    position: relative;
+    color: rgba(255, 255, 255, 1);
+  }
+  .bg-img-one {
+    background-image: url(./images/ullam-one.png);
+    background-repeat: no-repeat;
+    width: 370px;
+    height: 272px;
+  }
+  .bg-img-two {
+    background-image: url(./images/ullam-two.png);
+    background-repeat: no-repeat;
+    width: 370px;
+    height: 272px;
+  }
+  .bg-img-three {
+    background-image: url(./images/ullam-three.png);
+    background-repeat: no-repeat;
+    width: 370px;
+    height: 272px;
+  }
+  .fugiat {
+    padding: 82px 0 112px;
+  }
+  .Feautures {
+    padding-top: 72px;
+  }
+  .Feautures-heading {
+    padding: 8px 0 5px;
+  }
+  .officis {
+    padding: 71px 0 89px;
+  }
+  .testemonial-card {
+    box-shadow: 16px 16px 48px 0px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 1);
+    width: 370px;
+    height: 272px;
+    padding: 32px 32px 42px;
+    border-radius: 3px;
+    margin: 64px 0 100px;
+  }
+  .testemonial-p {
+    max-width: 306px;
+    padding: 14px 0 16px;
+  }
+  .Temporibus {
+    position: relative;
+  }
+  .Temporibus::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(./images/oval-nine.png) 42% 113% no-repeat, url(./images/oval-ten.png) 0% 120% no-repeat, url(./images/oval-eight.png) 48% 0 no-repeat;
+  } 
+
+  .bg-blue {
+    background-color: rgb(48,35,174);
+    color: rgba(255, 255, 255, 1);
+    padding: 160px 0 212px;
+  }
+  .Temporibus-team {
+    background-image: url(./images/oval-seven.png);
+    width: 512px;
+    height: 512px;
+    background-repeat: no-repeat;
+    background-position: 0 140%;
+    position: relative;
+  }
+  .Temporibus-team-one {
+    position: absolute;
+    top: 8%;
+    left: -5%;
+  }
+  .Temporibus-team-two {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+  }
+  .Temporibus-team-three {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+  }
+  .Temporibus-team-four {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+  }
+  .Temporibus-team-four {
+    position: absolute;
+    top: 70%;
+    left: 35%;
+  }
+  .Temporibus-team-five {
+    position: absolute;
+    top: 53%;
+    left: 62%;
+  }
+  .assumenda {
+    background: rgba(253, 242, 255, 1);
+    padding: 112px 0;
+    position: relative;
+  }
+  .itaque {
+    color: rgba(253, 242, 255, 1);
+    padding: 0 0 46px 48px;
+    background-image: url(./images/assumenda.png);
+    background-repeat: no-repeat;
+    width: 570px;
+    height: 544px;
+    position: relative;
+    z-index: 999;
+  }
+  .assumenda::before {
+    position: absolute;
+    content: "";
+    background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+    width: 570px;
+    height: 544px;
+    border-radius: 3px;
+    right: 14%;
+    top: 18.90%;
+    z-index: 5;
+  }
+  .itaq-p {
+    max-width: 474px;
+    opacity: 0.5;
+    padding: 9px 0 16px;
+  }
+  .adoara {
+    width: 183px;
   }
   .contact-us {
     padding-bottom: 160px;
   }
   .footer-p {
-    max-width: 570px;
     padding: 23px 0 32px;
     text-align: center;
 }
@@ -305,4 +507,287 @@ input[type=email] {
   .footer-social-media {
     margin-bottom: 14px;
   }
+  @media screen and (max-width: 375px) {
+      h1 {
+        font-size: 56px;
+      }
+      h2 {
+        font-size: 40px;
+        line-height: 48px;
+        width: 356px;
+      }
+      header {
+        padding-top: 0;
+      }
+      header::before {
+        height: 294.9012145996094px;
+        width: 339.7497863769531px;
+        left: 65%;
+      }
+      footer {
+        padding: 70px 0 58px;
+    }
+      footer::before {
+        top: 40%;
+      }
+      input[type=email] {
+        width: 346px;
+    }
+    input[type=submit] {
+      width: 170px;
+    }
+      .grid {
+        display: grid;
+        grid-template-columns: 180px 190px;
+        grid-template-rows: repeat(3, auto);
+        justify-items: center;
+        row-gap: 40px;
+
+      }
+      .fLx-wrap {
+        display: flex;
+        flex-wrap: wrap;
+      } 
+      .fLx-column {
+        display: flex;
+        flex-direction: column;
+      }
+      .fLx-center {
+        display: flex;
+        align-items: center;
+      }
+      .fLx-start {
+        align-items: flex-start;
+        gap: 58px;
+      }
+      .relap {
+        font-size: 24px;
+        color: rgba(0, 0, 0,1);
+        line-height: 32px;
+      }
+      .top-header {
+        background-color: rgba(255, 255, 255, 1);
+      }
+      .logo {
+        padding: 2px 0 15px;
+      }
+      .hidden-header-menu {
+        display: block;
+      }
+      .disply-none {
+        display: none;
+      }
+      .padding-bttm-55 {
+        padding-bottom: 40px;
+      }
+      .omnis-voluptas {
+         padding-top: 23px;
+         padding-bottom: 320px;
+      }
+      .main-header::before {
+        position: absolute;
+        content: "";
+        width: 339px;
+        height: 392px;
+        transform: translateY(105%);
+        right: 0px;
+        background-image: url(./images/illusration-two.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        z-index: 999;
+      }
+      .main-header::after {
+        position: absolute;
+        content: "";
+        transform: translateY(-10%);
+        bottom: 100%;
+        left: 0%;
+        z-index: ;
+        background-image: url(./images/oval-one.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+      }
+      .omnis-voluptas::before {
+        top: 40%;
+        left: 100%;
+        background-image: url(./images/oval-eleven.png);
+      }
+      .main-header {
+        background: url(./images/oval-four.png) -10% 108% no-repeat, url(./images/oval.png) 140% 59% no-repeat;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      }
+      .header-social-media {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 32px;
+      }
+      .video-bg::before {
+        background-image: url(./images/video-two.png);
+        top: 0%;
+        left: -1%;
+        transform: translateY(25%);
+      }
+      .video-bg::after {
+        background-image: url(./images/laborisme-two.png);
+        top: 0%;
+        left: 1%;
+        transform: translateY(20%);
+      }
+      .video {
+        width: 58px;
+        height: 58px;
+      }
+      .video img {
+        width: 13px;
+        height: 13px;
+      }
+      .transform {
+        left: 43%;
+        transform: translateY(272%);
+      }
+     .Quis-autem {
+      padding: 45px 0 350px;
+     }
+     .ullam {
+      padding-top: 28px;
+     }
+     .ullam::after {
+      position: absolute;
+      content: "";
+      width: 374px;
+      height: 100%;
+      background-color: rgba(253, 242, 255, 1);
+      top: 0%;
+      z-index: -2;
+      left: 0%;
+    }
+    .ullam-menu {
+      max-width: 320px;
+      justify-content: flex-start;
+      column-gap: 31px;
+      row-gap: 24px;
+    }
+    .ullam-paragraph {
+      padding-bottom: 46px;
+    }
+    .exercitation {
+      margin: 0 0 18px 0;
+    }
+    .bg-img-one {
+      margin-top: 42px;
+    }
+    .bg-img-three {
+      margin-bottom: 34px;
+    }
+    .bg-img-three,.bg-img-two,.bg-img-one {
+      width: 346px;
+      height: 254px;
+    }
+    .fugiat {
+      padding: 38px 0 64px;
+    }
+    .Feautures {
+      padding-top: 56px;
+    }
+    .bg-blue {
+      padding: 0px 0 112px;
+    }
+    .Temporibus-main {
+      z-index: 999;
+    }
+    .Temporibus-team {
+      background-size: 400px;
+      background-position: 65% 65%;
+    }
+    .Temporibus-team img {
+      width: 160px;
+      height: 160px;
+    }
+    .Temporibus-team-one {
+      position: absolute;
+      top: 18%;
+      left: 13%;
+    }
+    .Temporibus-team-two {
+      position: absolute;
+      left: 60%;
+      top: 20%;
+    }
+    .Temporibus-team-three {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+    }
+    .Temporibus-team-four {
+      position: absolute;
+      top: 65%;
+      left: 38%;
+    }
+    .Temporibus-team-five {
+      position: absolute;
+      top: 50%;
+      left: 60%;
+    }
+    .Temporibus-team::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-image: url(./images/oval-team.png);
+      background-repeat: no-repeat;
+      top: -7%;
+      left: 77%;
+    }
+    .Temporibus::before {
+      background: url(./images/oval-nine.png) 110% 110% no-repeat, url(./images/oval-ten.png) 0% 130% no-repeat;
+      z-index: 5;
+    } 
   
+    .officis {
+      padding-top: 58px;
+    }
+    .testemonial-card {
+      width: 346px;
+      height: 272px;
+      margin: 16px 0 0;
+    }
+    .first-card {
+      margin-top: 48px;
+    }
+    .last-card {
+      margin-bottom: 74px;
+    }
+    .assumenda {
+      padding: 45px 0 60px;
+    }
+    .itaque {
+      padding: 0 0 26px 29px;
+      background-image: url(./images/assumenda-two.png);
+      left: 2%;
+      width: 329px;
+      height: 316px;
+    }
+    .aliquid {
+      padding-bottom: 80px;
+    }
+    .assumenda::before {
+      width: 329px;
+      height: 316px;
+      left: 3%;
+      top: 56.80%;
+    
+    }
+    .itaq-p {
+      max-width: 274px;
+    }
+   .footer-navigation {
+    gap: 40px;
+    padding-top: 0px;
+   }
+   .footer-list {
+    padding-top: 15px;
+   }
+}
