@@ -745,9 +745,12 @@ footer::before {
       background: url(./images/oval-nine.png) 110% 110% no-repeat, url(./images/oval-ten.png) 0% 130% no-repeat;
       z-index: 5;
     } 
-  
     .officis {
       padding-top: 58px;
+    }
+    .officis-p {
+      width: 330px;
+      line-height: 24px;
     }
     .testemonial-card {
       width: 346px;
