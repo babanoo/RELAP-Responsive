@@ -608,7 +608,7 @@ padding-bottom: 55px;
     }
       .grid {
         display: grid;
-        grid-template-columns: 180px 190px;
+        grid-template-columns: 165px 195px;
         grid-template-rows: repeat(3, auto);
         justify-items: center;
         row-gap: 40px;
