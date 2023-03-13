@@ -612,7 +612,6 @@ padding-bottom: 55px;
         grid-template-rows: repeat(3, auto);
         justify-items: center;
         row-gap: 40px;
-
       }
       .fLx-wrap {
         display: flex;
