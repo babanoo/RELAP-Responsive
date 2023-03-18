@@ -3,22 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
 }
+
 ul {
     list-style: none;
     
 }
+
 nav {
     width: 414px;
     
 }
+
 body {
     font-family: "Source Sans Pro", sans-serif;
 }
+
 h1 {
     font-weight: 700;
     font-size: 72px;
@@ -26,6 +31,7 @@ h1 {
     max-width: 336px;
     color: rgba(255, 255, 255, 1);
 }
+
 h2 {
     font-weight: 700;
     font-size: 56px;
@@ -33,10 +39,12 @@ h2 {
     line-height: 64px;
     padding: 18px 0 0;
 }
+
 h3 {
   font-weight: 700;
   font-size: 24px;
 }
+
 footer {
     background-image: url(./images/footer-bg.png);
     width: 100%;
@@ -44,19 +52,23 @@ footer {
     padding: 135px 0 74px;
     position: relative;
 }
+
 form {
     display: flex;
     gap: 30px;
 }
+
 span {
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
 }
+
 header {
   position: relative;
   padding-top: 34px;
 }
+
 header::before {
   position: absolute;
   z-index: 0;
@@ -68,6 +80,7 @@ header::before {
   background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
   border-radius: 50%;
 }
+
 input[type=email] {
   width: 370px;
   height: 48px;
@@ -75,14 +88,15 @@ input[type=email] {
   color: rgba(51, 51, 51,);
   padding: 12px 283px 12px 16px;
   border: 1px solid rgba(218, 218, 218, 1);
-  
   border-radius: 3px;
   cursor: pointer;
 }
+
 input[type=submit] {
   color: white;
   padding: 12px 67px;
 }
+
 footer::before {
   position: absolute;
   content: "";
@@ -92,76 +106,94 @@ footer::before {
   left: 0;
   top: 65%;
 }
+
 .container {
     max-width: 1199px;
     margin: 0 auto;
     padding: 0 15px;
 }
+
 .flx-btwn {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .flx-center {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .flx-start {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
+
 .flx-end {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
 }
+
 .flx-column {
   display: flex;
   flex-direction: column;
 }
+
 .flx-start-col {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
 }
+
 .justify-content-end {
     display: flex;
     justify-content: flex-end;
 }
+
 .flx-gap {
     display: flex;
     gap: 8px;
 }
+
 .flx-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .font-Poppins {
     font-family: Poppins;
 }
+
 .font-600 {
     font-weight: 600;
     font-size: 16px;
 }
+
 .font-400 {
     font-weight: 400;
     font-size: 16px;
 }
+
 .text-gray {
     color: rgba(51, 51, 51, 0.5);
 }
+
 .bg-gradient {
   background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
 }
+
 .black-clr {
   color: rgba(51, 51, 51,1);
 }
+
 .hidden-overfflow {
   overflow: hidden;
 }
+
 .base-bttn {
   font-weight: 700;
   font-size: 16px;
@@ -170,64 +202,82 @@ footer::before {
   text-align: center;
   border: none;
 }
+
 .blue-bttn {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 .blue-bttn:hover {
 background-color: rgba(255, 195, 0, 1);
 }
+
 .yellow-bttn {
   background-color: rgba(255, 195, 0, 1);
 }
+
 .yellow-bttn:hover {
 background-color: rgba(253, 242, 255, 1);
 color: rgba(200, 109, 215, 1);
 }
+
 .purple-bttn {
   background-color: rgba(200, 109, 215, 1);
 }
+
 .purple-bttn:hover {
 opacity: 0.5;
 }
+
 .width-570 {
 max-width: 570px;
 }
+
 .width-322 {
 max-width: 322px;
 }
+
 .width-470 {
 max-width: 470px;
 padding: 23px 0 48px;
 line-height: 24px;
 }
+
 .center-text {
 text-align: center;
 }
+
 .padding-bottm {
 padding-bottom: 24px;
 }
+
 .padding-bttm-55 {
 padding-bottom: 55px;
 }
+
 .scale:hover {
   transform: scale(1.5);
   margin: 0 10px;
 }
+
 .relap {
     color: rgba(255, 255, 255, 1);
     font-weight: 700;
     font-size: 40px;
 }
+
 .hover-list:hover {
   color: rgba(255, 195, 1);
 }
+
 .hidden-header-menu {
   display: none;
 }
+
   .omnis-voluptas {
     padding: 150px 0;
     position: relative;
   }
+
   .omnis-voluptas::before {
     position: absolute;
     content: "";
@@ -238,12 +288,15 @@ padding-bottom: 55px;
     top: -5%;
     left: 112.50%;
   }
+
   .header-social-media {
     padding-bottom: 48px;
   }
+
   .main-header {
     position: relative;
   }
+
   .main-header::before {
     position: absolute;
     content: "";
@@ -256,6 +309,7 @@ padding-bottom: 55px;
     background-position: right;
     z-index: 999;
   }
+
   .main-header::after {
     position: absolute;
     content: "";
@@ -267,22 +321,26 @@ padding-bottom: 55px;
     background-repeat: no-repeat;
     background-position: right top;
   }
+
   .main-header {
     background: url(./images/oval-four.png) 39% 108% no-repeat, url(./images/oval.png) 100% 20% no-repeat;
     width: 100%;
     height: 100%;
     z-index: 0;
   }
+
   .omnis-p {
     max-width: 370px;
     padding: 26px 0 48px;
     color: rgba(255, 255, 255, 1);
     line-height: 24px;
   }
+
   .border-before {
     position: relative;
     z-index: 999;
   }
+
   .border-before::before {
     position: absolute;
     content: "";
@@ -292,20 +350,25 @@ padding-bottom: 55px;
     top: 70%;
     z-index: -2;
   }
+
   .droppdown-img {
     margin-left: 8px;
   }
+
   .laborisam-p {
     max-width: 470px;
     line-height: 24px;
     padding: 8px 0 46px;
   }
+
   .padding {
     padding-top: 24px;
   }
+
   .Quis-autem {
     padding: 141px 0 96px
   }
+
   .video {
     background-color: rgba(255, 255, 255, 1);
     width: 116px;
@@ -317,12 +380,15 @@ padding-bottom: 55px;
     box-shadow: 16px 16px 48px rgb(0 0 0 / 10%);
     cursor: pointer;
   }
+
   .video:hover {
     background-color: black;
   }
+
   .video-bg {
     position: relative;
   }
+
   .video-bg::before {
     position: absolute;
     width: 100%;
@@ -334,6 +400,7 @@ padding-bottom: 55px;
     left: 50%;
     transform: translateY(-68%);
   }
+
   .video-bg::after {
     position: absolute;
     width: 100%;
@@ -345,16 +412,19 @@ padding-bottom: 55px;
     left: 53%;
     transform: translateY(-72%);
   }
+
   .transform {
     z-index: 999;
     position: relative;
     left: 46%;
     transform: translateY(-190%);
   }
+
   .ullam {
     position: relative;
     padding: 61px 0px 48px 0px;
   }
+
   .ullam::after {
     position: absolute;
     content: "";
@@ -365,15 +435,19 @@ padding-bottom: 55px;
     z-index: -2;
     left: 6%;
   }
+
   .ullam-menu {
     width: 510px;
   }
+
   .hover-menu:not(first-of-type):hover {
     color: rgba(0, 0, 1);
   }
+
   .ullam-paragraph {
     line-height: 24px;
   }
+
   .exercitation {
     gap: 9px;
     padding-bottom: 26px;
@@ -382,46 +456,57 @@ padding-bottom: 55px;
     position: relative;
     color: rgba(255, 255, 255, 1);
   }
+
   .exercitation h3,.exercitation-p{
     display: none;
   }
+
   .exercitation:hover>h3, .exercitation:hover>.exercitation-p {
     display: block;
   }
+
   .exercitation:hover {
     opacity: 0.8;
   }
+
   .bg-img-one {
     background-image: url(./images/ullam-one.png);
     background-repeat: no-repeat;
     width: 370px;
     height: 272px;
   }
+
   .bg-img-two {
     background-image: url(./images/ullam-two.png);
     background-repeat: no-repeat;
     width: 370px;
     height: 272px;
   }
+
   .bg-img-three {
     background-image: url(./images/ullam-three.png);
     background-repeat: no-repeat;
     width: 370px;
     height: 272px;
   }
+
   .fugiat {
     padding: 82px 0 112px;
   }
+
   .Feautures {
     padding: 40px 24px 32px;
     cursor: pointer;
   }
+
   .fugiat-p {
     padding-bottom: 40px;
   }
+
   .Feautures:hover {
     box-shadow: 16px 16px 48px 0px rgba(0, 0, 0, 0.1);
   }
+
   .Feautures:hover>.Feautures-heading::after {
     position: absolute;
     content: "";
@@ -432,49 +517,58 @@ padding-bottom: 55px;
     right: 29%;
     z-index: -1;
   }
+
   .Feautures:hover>.consequuntur::after {
     width: 180px;
     right: 22%;
   }
+
   .Feautures:hover>.voluptatem::after {
     width: 149px;
     right: 27%;
   }
+
   .Feautures:hover>.aliquid::after {
     width: 89px;
     right: 36.70%;
   }
+
   .Feautures:hover>.excepteur::after {
     width: 125px;
     right: 31%;
   }
+
   .Feautures:hover>.accusamus::after {
     width: 148px;
     right: 27%;
   }
+
   .Feautures-heading {
     padding: 13px 0 9px;
     position: relative;
   }
+
   .officis {
     padding: 71px 0 89px;
   }
+
   .testemonial-card {
     box-shadow: 16px 16px 48px 0px rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 1);
-    width: 370px;
-    height: 272px;
     padding: 32px 32px 42px;
     border-radius: 3px;
     margin: 64px 0 100px;
   }
+
   .testemonial-p {
     max-width: 306px;
     padding: 14px 0 16px;
   }
+
   .Temporibus {
     position: relative;
   }
+
   .Temporibus::before {
     position: absolute;
     content: "";
@@ -488,6 +582,7 @@ padding-bottom: 55px;
     color: rgba(255, 255, 255, 1);
     padding: 160px 0 212px;
   }
+
   .Temporibus-team {
     background-image: url(./images/oval-seven.png);
     width: 512px;
@@ -496,41 +591,49 @@ padding-bottom: 55px;
     background-position: 0 140%;
     position: relative;
   }
+
   .Temporibus-team-one {
     position: absolute;
     top: 8%;
     left: -5%;
   }
+
   .Temporibus-team-two {
     position: absolute;
     left: 50%;
     top: 15%;
   }
+
   .Temporibus-team-three {
     position: absolute;
     top: 50%;
     left: -5%;
   }
+
   .Temporibus-team-four {
     position: absolute;
     top: 70%;
     left: 30%;
   }
+
   .Temporibus-team-four {
     position: absolute;
     top: 70%;
     left: 35%;
   }
+
   .Temporibus-team-five {
     position: absolute;
     top: 53%;
     left: 62%;
   }
+
   .assumenda {
     background: rgba(253, 242, 255, 1);
     padding: 112px 0;
     position: relative;
   }
+
   .itaque {
     color: rgba(253, 242, 255, 1);
     padding: 0 0 46px 48px;
@@ -541,6 +644,7 @@ padding-bottom: 55px;
     position: relative;
     z-index: 999;
   }
+
   .assumenda::before {
     position: absolute;
     content: "";
@@ -552,107 +656,135 @@ padding-bottom: 55px;
     top: 18.90%;
     z-index: 5;
   }
+
   .itaq-p {
     max-width: 474px;
     opacity: 0.5;
     padding: 9px 0 16px;
   }
+
   .adoara {
     width: 183px;
   }
+
   .contact-us {
     padding-bottom: 160px;
   }
+
   .footer-p {
     padding: 23px 0 32px;
     text-align: center;
-}
+  }
+
   .footer-navigation {
     padding-top: 61px;
     width: 650px;
   }
+
   .footer-list {
     padding-top: 8px;
   }
+
   .footer-social-media {
     margin-bottom: 14px;
   }
+
   @media screen and (max-width: 375px) {
       h1 {
         font-size: 56px;
       }
+
       h2 {
         font-size: 40px;
         line-height: 48px;
         width: 356px;
       }
+
       header {
         padding-top: 0;
       }
+
       header::before {
         height: 294.9012145996094px;
         width: 339.7497863769531px;
         left: 65%;
       }
+
       footer {
         padding: 70px 0 58px;
     }
+
       footer::before {
         top: 40%;
-      }
+    }
+
       input[type=email] {
         width: 346px;
     }
+
     input[type=submit] {
       width: 170px;
-    }
+     }
+
       .grid {
         display: grid;
         grid-template-columns: 165px 195px;
         grid-template-rows: repeat(3, auto);
         justify-items: center;
         row-gap: 40px;
-      }
+     }
+
       .fLx-wrap {
         display: flex;
         flex-wrap: wrap;
-      } 
+     } 
+
       .fLx-column {
         display: flex;
         flex-direction: column;
-      }
+     }
+
       .fLx-center {
         display: flex;
         align-items: center;
       }
+
       .fLx-start {
         align-items: flex-start;
         gap: 58px;
       }
+
       .relap {
         font-size: 24px;
         color: rgba(0, 0, 0,1);
         line-height: 32px;
       }
+
       .top-header {
         background-color: rgba(255, 255, 255, 1);
       }
+
       .logo {
         padding: 14px 0 15px;
       }
+
       .hidden-header-menu {
         display: block;
       }
+
       .disply-none {
         display: none;
       }
+
       .padding-bttm-55 {
         padding-bottom: 40px;
       }
+
       .omnis-voluptas {
          padding-top: 23px;
          padding-bottom: 320px;
       }
+
       .main-header::before {
         position: absolute;
         content: "";
@@ -665,6 +797,7 @@ padding-bottom: 55px;
         background-position: right;
         z-index: 999;
       }
+
       .main-header::after {
         position: absolute;
         content: "";
@@ -675,53 +808,64 @@ padding-bottom: 55px;
         background-repeat: no-repeat;
         background-position: right top;
       }
+
       .omnis-voluptas::before {
         top: 32%;
         left: 100%;
         background-image: url(./images/oval-eleven.png);
       }
+
       .main-header {
         background: url(./images/oval-four.png) -10% 108% no-repeat, url(./images/oval.png) 140% 49% no-repeat;
         width: 100%;
         height: 100%;
         z-index: 0;
       }
+
       .header-social-media {
         display: flex;
         justify-content: center;
         align-items: flex-start;
         padding-bottom: 32px;
       }
+
       .video-bg::before {
         background-image: url(./images/video-two.png);
         top: 0%;
         left: -1%;
         transform: translateY(25%);
       }
+
       .video-bg::after {
         background-image: url(./images/laborisme-two.png);
         top: 0%;
         left: 1%;
         transform: translateY(20%);
       }
+
       .video {
         width: 58px;
         height: 58px;
       }
+
       .video img {
         width: 13px;
         height: 13px;
       }
+
       .transform {
         left: 43%;
         transform: translateY(272%);
       }
+
      .Quis-autem {
       padding: 45px 0 350px;
      }
+
      .ullam {
       padding-top: 28px;
      }
+
      .ullam::after {
       position: absolute;
       content: "";
@@ -732,70 +876,87 @@ padding-bottom: 55px;
       z-index: -2;
       left: 0%;
     }
+
     .ullam-menu {
       max-width: 320px;
       justify-content: flex-start;
       column-gap: 31px;
       row-gap: 24px;
     }
+
     .ullam-paragraph {
       padding-bottom: 46px;
     }
+
     .exercitation {
       margin: 0 0 18px 0;
     }
+
     .bg-img-one {
       margin-top: 42px;
     }
+
     .bg-img-three {
       margin-bottom: 34px;
     }
+
     .bg-img-three,.bg-img-two,.bg-img-one {
       width: 346px;
       height: 254px;
     }
+
     .fugiat {
       padding: 38px 0 64px;
     }
+
     .bg-blue {
       padding: 0px 0 112px;
     }
+
     .Temporibus-main {
       z-index: 999;
     }
+
     .Temporibus-team {
       background-size: 400px;
       background-position: 65% 65%;
     }
+
     .Temporibus-team img {
       width: 160px;
       height: 160px;
     }
+
     .Temporibus-team-one {
       position: absolute;
       top: 18%;
       left: 13%;
     }
+
     .Temporibus-team-two {
       position: absolute;
       left: 60%;
       top: 20%;
     }
+
     .Temporibus-team-three {
       position: absolute;
       top: 50%;
       left: 10%;
     }
+
     .Temporibus-team-four {
       position: absolute;
       top: 65%;
       left: 38%;
     }
+
     .Temporibus-team-five {
       position: absolute;
       top: 50%;
       left: 60%;
     }
+
     .Temporibus-team::after {
       position: absolute;
       content: "";
@@ -806,31 +967,42 @@ padding-bottom: 55px;
       top: -7%;
       left: 77%;
     }
+
     .Temporibus::before {
       background: url(./images/oval-nine.png) 110% 110% no-repeat, url(./images/oval-ten.png) 0% 130% no-repeat;
       z-index: 5;
     } 
+
     .officis {
       padding-top: 58px;
     }
+
     .officis-p {
       width: 330px;
       line-height: 24px;
     }
+
     .testemonial-card {
-      width: 346px;
-      height: 272px;
+      padding: 32px 30px;
       margin: 16px 0 0;
     }
+
+    .testemonial-p  {
+      max-width: 286px;
+    }
+
     .first-card {
       margin-top: 48px;
     }
+
     .last-card {
       margin-bottom: 74px;
     }
+
     .assumenda {
       padding: 45px 0 60px;
     }
+
     .itaque {
       padding: 0 0 26px 29px;
       background-image: url(./images/assumenda-two.png);
@@ -838,26 +1010,31 @@ padding-bottom: 55px;
       width: 329px;
       height: 316px;
     }
+
     .aliquid {
       padding-bottom: 80px;
     }
+
     .assumenda::before {
       width: 329px;
       height: 316px;
       left: 3%;
       top: 56.80%;
-    
     }
+
     .itaq-p {
       max-width: 274px;
     }
+
     .contact-us {
       text-align: center;
     }
+
    .footer-navigation {
     gap: 40px;
     padding-top: 0px;
    }
+   
    .footer-list {
     padding-top: 15px;
    }
