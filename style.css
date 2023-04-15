@@ -815,8 +815,9 @@ padding-bottom: 55px;
 
       .video-bg::before {
         position: absolute;
-        width: 380px;
+        width: 339px;
         height: 272px;
+        background-size: 339px;
         background-repeat: no-repeat;
         content: "";
         background-image: url(./images/video-bg.png);
@@ -824,7 +825,7 @@ padding-bottom: 55px;
         right: 100%;
         top: 0px;
         bottom: 100%px;
-        transform: translate(-35%, -36%);
+        transform: translate(-35%, -30%);
         z-index: -1;
       }
     
@@ -840,7 +841,7 @@ padding-bottom: 55px;
         bottom: 100%;
         top: 0px;
         right: 100%;
-        transform: translate(-36%, -40%);
+        transform: translate(-32%, -40%);
         z-index: 1;
       }
 
