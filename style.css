@@ -27,14 +27,6 @@ h1 {
     color: rgba(255, 255, 255, 1);
 }
 
-h2 {
-    font-weight: 700;
-    font-size: 56px;
-    max-width: 570px;
-    line-height: 64px;
-    padding: 18px 0 0;
-}
-
 h3 {
   font-weight: 700;
   font-size: 24px;
@@ -45,9 +37,10 @@ footer {
     width: 100%;
     height: 100%;
     padding: 135px 0 74px;
-    position: relative;
 }
-
+hr {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
 form {
     display: flex;
     gap: 30px;
@@ -90,16 +83,6 @@ input[type=email] {
 input[type=submit] {
   color: white;
   padding: 12px 67px;
-}
-
-footer::before {
-  position: absolute;
-  content: "";
-  height: 2px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
-  left: 0;
-  top: 65%;
 }
 
 .container {
@@ -158,7 +141,18 @@ footer::before {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
+.align-item-centr {
+  display: flex;
+  align-items: center;
+  gap: 63px;
+}
+.relap-heading {
+  font-weight: 700;
+  font-size: 56px;
+  max-width: 570px;
+  line-height: 64px;
+  padding: 18px 0 0;
+}
 .font-Poppins {
     font-family: Poppins;
 }
@@ -297,7 +291,7 @@ padding-bottom: 55px;
     content: "";
     width: 704px;
     height: 759px;
-    transform: translateY(10%);
+    top: 10%;
     right: 15px;
     background-image: url(./images/illustration.png);
     background-repeat: no-repeat;
@@ -308,8 +302,6 @@ padding-bottom: 55px;
   .main-header::after {
     position: absolute;
     content: "";
-    transform: translateY(-30%);
-    bottom: 100%;
     left: 13.35%;
     z-index: 0;
     background-image: url(./images/oval-one.png);
@@ -331,21 +323,6 @@ padding-bottom: 55px;
     line-height: 24px;
   }
 
-  .border-before {
-    position: relative;
-    z-index: 999;
-  }
-
-  .border-before::before {
-    position: absolute;
-    content: "";
-    width: 161px;
-    height: 8px;
-    background: rgba(200, 109, 215, 1);
-    top: 70%;
-    z-index: -2;
-  }
-
   .droppdown-img {
     margin-left: 8px;
   }
@@ -360,8 +337,8 @@ padding-bottom: 55px;
     padding-top: 24px;
   }
 
-  .Quis-autem {
-    padding: 141px 0 96px
+  .laboriosam {
+    padding: 141px 0 186px
   }
 
   .video {
@@ -374,6 +351,8 @@ padding-bottom: 55px;
     align-items: center;
     box-shadow: 16px 16px 48px rgb(0 0 0 / 10%);
     cursor: pointer;
+    position: relative;
+    z-index: 2;
   }
 
   .video:hover {
@@ -386,53 +365,42 @@ padding-bottom: 55px;
 
   .video-bg::before {
     position: absolute;
-    width: 100%;
-    height: 544%;
+    width: 700px;
+    height: 544px;
     background-repeat: no-repeat;
     content: "";
     background-image: url(./images/video-bg.png);
-    top: 0%;
-    left: 50%;
-    transform: translateY(-68%);
+    left: 20%;
+    top: 5px;
+    bottom: 20px;
+    transform: translateY(-32%);
+    z-index: -1;
   }
 
   .video-bg::after {
     position: absolute;
-    width: 100%;
-    height: 544%;
+    width: 672px;
+    height: 544px;
     background-repeat: no-repeat;
     content: "";
     background-image: url(./images/laborism.png);
-    top: 0%;
-    left: 53%;
-    transform: translateY(-72%);
-  }
-
-  .transform {
-    z-index: 999;
-    position: relative;
-    left: 46%;
-    transform: translateY(-190%);
+    left: 43%;
+    bottom: 50%;
+    top: 0px;
+    transform: translateY(-35%);
+    z-index: 1;
   }
 
   .ullam {
-    position: relative;
-    padding: 61px 0px 48px 0px;
-  }
-
-  .ullam::after {
-    position: absolute;
-    content: "";
-    width: 1440px;
-    height: 768px;
     background-color: rgba(253, 242, 255, 1);
-    top: 0%;
-    z-index: -2;
-    left: 6%;
+    padding: 61px 0px 48px 0px;
+    width: calc(1440px - 40px);
+    margin-left: auto;
   }
 
   .ullam-menu {
-    width: 510px;
+    display: flex;
+    gap: 30px;
   }
 
   .hover-menu:not(first-of-type):hover {
@@ -443,11 +411,14 @@ padding-bottom: 55px;
     line-height: 24px;
   }
 
+  .exercitations {
+    padding:  42px 0 48px;
+  }
+
   .exercitation {
     gap: 9px;
     padding-bottom: 26px;
     padding-left: 35px;
-    margin: 42px 0 48px;
     position: relative;
     color: rgba(255, 255, 255, 1);
   }
@@ -489,7 +460,7 @@ padding-bottom: 55px;
     padding: 82px 0 112px;
   }
 
-  .Feautures {
+  .feautures {
     padding: 40px 24px 32px;
     cursor: pointer;
   }
@@ -498,11 +469,11 @@ padding-bottom: 55px;
     padding-bottom: 40px;
   }
 
-  .Feautures:hover {
+  .feautures:hover {
     box-shadow: 16px 16px 48px 0px rgba(0, 0, 0, 0.1);
   }
 
-  .Feautures:hover>.Feautures-heading::after {
+  .feautures:hover>.feautures-heading::after {
     position: absolute;
     content: "";
     width: 135px;
@@ -513,32 +484,32 @@ padding-bottom: 55px;
     z-index: -1;
   }
 
-  .Feautures:hover>.consequuntur::after {
+  .feautures:hover>.consequuntur::after {
     width: 180px;
     right: 22%;
   }
 
-  .Feautures:hover>.voluptatem::after {
+  .feautures:hover>.voluptatem::after {
     width: 149px;
     right: 27%;
   }
 
-  .Feautures:hover>.aliquid::after {
+  .feautures:hover>.aliquid::after {
     width: 89px;
     right: 36.70%;
   }
 
-  .Feautures:hover>.excepteur::after {
+  .feautures:hover>.excepteur::after {
     width: 125px;
     right: 31%;
   }
 
-  .Feautures:hover>.accusamus::after {
+  .feautures:hover>.accusamus::after {
     width: 148px;
     right: 27%;
   }
 
-  .Feautures-heading {
+  .feautures-heading {
     padding: 13px 0 9px;
     position: relative;
   }
@@ -546,13 +517,15 @@ padding-bottom: 55px;
   .officis {
     padding: 71px 0 89px;
   }
+   #testemonial {
+    margin: 64px 0 100px;
+   }
 
   .testemonial-card {
     box-shadow: 16px 16px 48px 0px rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 1);
     padding: 32px 32px 42px;
     border-radius: 3px;
-    margin: 64px 0 100px;
   }
 
   .testemonial-p {
@@ -560,11 +533,11 @@ padding-bottom: 55px;
     padding: 14px 0 16px;
   }
 
-  .Temporibus {
-    position: relative;
+  .temporibus {
+   position: relative;
   }
 
-  .Temporibus::before {
+  .temporibus::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -578,7 +551,7 @@ padding-bottom: 55px;
     padding: 160px 0 212px;
   }
 
-  .Temporibus-team {
+  .temporibus-team {
     background-image: url(./images/oval-seven.png);
     width: 512px;
     height: 512px;
@@ -587,37 +560,37 @@ padding-bottom: 55px;
     position: relative;
   }
 
-  .Temporibus-team-one {
+  .temporibus-team-one {
     position: absolute;
     top: 8%;
     left: -5%;
   }
 
-  .Temporibus-team-two {
+  .temporibus-team-two {
     position: absolute;
     left: 50%;
     top: 15%;
   }
 
-  .Temporibus-team-three {
+  .temporibus-team-three {
     position: absolute;
     top: 50%;
     left: -5%;
   }
 
-  .Temporibus-team-four {
+  .temporibus-team-four {
     position: absolute;
     top: 70%;
     left: 30%;
   }
 
-  .Temporibus-team-four {
+  .temporibus-team-four {
     position: absolute;
     top: 70%;
     left: 35%;
   }
 
-  .Temporibus-team-five {
+  .temporibus-team-five {
     position: absolute;
     top: 53%;
     left: 62%;
@@ -625,31 +598,32 @@ padding-bottom: 55px;
 
   .assumenda {
     background: rgba(253, 242, 255, 1);
-    padding: 112px 0;
-    position: relative;
+    padding: 112px 0 240px;
   }
-
   .itaque {
+    position: relative;
     color: rgba(253, 242, 255, 1);
-    padding: 0 0 46px 48px;
+  }
+ 
+.itaque-earum {
     background-image: url(./images/assumenda.png);
     background-repeat: no-repeat;
     width: 570px;
     height: 544px;
-    position: relative;
-    z-index: 999;
+    padding: 0 0 46px 48px;
+    z-index: 2;
   }
 
-  .assumenda::before {
+  .itaque::before {
     position: absolute;
     content: "";
     background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
     width: 570px;
     height: 544px;
     border-radius: 3px;
-    right: 14%;
-    top: 18.90%;
-    z-index: 5;
+    right: 30px;
+    top: 5%;
+    z-index: 1;
   }
 
   .itaq-p {
@@ -684,16 +658,17 @@ padding-bottom: 55px;
     margin-bottom: 14px;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 600px) {
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
       h1 {
         font-size: 56px;
       }
 
-      h2 {
-        font-size: 40px;
-        line-height: 48px;
-        width: 356px;
-      }
 
       header {
         padding-top: 0;
@@ -748,6 +723,12 @@ padding-bottom: 55px;
         align-items: flex-start;
         gap: 58px;
       }
+       
+      .relap-heading {
+        font-size: 40px;
+        line-height: 48px;
+        width: 356px;
+      }
 
       .relap {
         font-size: 24px;
@@ -760,7 +741,7 @@ padding-bottom: 55px;
       }
 
       .logo {
-        padding: 14px 0 15px;
+        padding: 16px 0 18px;
       }
 
       .hidden-header-menu {
@@ -785,12 +766,12 @@ padding-bottom: 55px;
         content: "";
         width: 339px;
         height: 392px;
-        transform: translateY(105%);
+        top: 55%;
         right: 0px;
         background-image: url(./images/illusration-two.png);
         background-repeat: no-repeat;
         background-position: right;
-        z-index: 999;
+        z-index: 3;
       }
 
       .main-header::after {
@@ -823,19 +804,44 @@ padding-bottom: 55px;
         align-items: flex-start;
         padding-bottom: 32px;
       }
-
-      .video-bg::before {
-        background-image: url(./images/video-two.png);
-        top: 0%;
-        left: -1%;
-        transform: translateY(25%);
+      
+      .laboriosam {
+        padding: 45px 14px 48px;
       }
 
+      .video-bg {
+         margin: 80px 0 98px;
+      }
+
+      .video-bg::before {
+        position: absolute;
+        width: 380px;
+        height: 272px;
+        background-repeat: no-repeat;
+        content: "";
+        background-image: url(./images/video-bg.png);
+        left: 0%;
+        right: 100%;
+        top: 0px;
+        bottom: 100%px;
+        transform: translate(-35%, -36%);
+        z-index: -1;
+      }
+    
       .video-bg::after {
-        background-image: url(./images/laborisme-two.png);
-        top: 0%;
-        left: 1%;
-        transform: translateY(20%);
+        position: absolute;
+        width: 339px;
+        height: 272px;
+        background-size: 339px;
+        background-repeat: no-repeat;
+        content: "";
+        background-image: url(./images/laborism.png);
+        left: 0%;
+        bottom: 100%;
+        top: 0px;
+        right: 100%;
+        transform: translate(-36%, -40%);
+        z-index: 1;
       }
 
       .video {
@@ -847,29 +853,11 @@ padding-bottom: 55px;
         width: 13px;
         height: 13px;
       }
-
-      .transform {
-        left: 43%;
-        transform: translateY(272%);
-      }
-
-     .Quis-autem {
-      padding: 45px 0 350px;
-     }
-
+      
      .ullam {
-      padding-top: 28px;
-     }
-
-     .ullam::after {
-      position: absolute;
-      content: "";
-      width: 374px;
-      height: 100%;
-      background-color: rgba(253, 242, 255, 1);
-      top: 0%;
-      z-index: -2;
-      left: 0%;
+      padding: 29px 0px 48px 0px;
+      width: 100%;
+      margin-left: 0;
     }
 
     .ullam-menu {
@@ -881,6 +869,10 @@ padding-bottom: 55px;
 
     .ullam-paragraph {
       padding-bottom: 46px;
+    }
+    
+    .exercitations {
+      padding: 0;
     }
 
     .exercitation {
@@ -908,51 +900,51 @@ padding-bottom: 55px;
       padding: 0px 0 112px;
     }
 
-    .Temporibus-main {
+    .temporibus-main {
       z-index: 999;
     }
 
-    .Temporibus-team {
+    .temporibus-team {
       background-size: 400px;
       background-position: 65% 65%;
     }
 
-    .Temporibus-team img {
+    .temporibus-team img {
       width: 160px;
       height: 160px;
     }
 
-    .Temporibus-team-one {
+    .temporibus-team-one {
       position: absolute;
       top: 18%;
       left: 13%;
     }
 
-    .Temporibus-team-two {
+    .temporibus-team-two {
       position: absolute;
       left: 60%;
       top: 20%;
     }
 
-    .Temporibus-team-three {
+    .temporibus-team-three {
       position: absolute;
       top: 50%;
       left: 10%;
     }
 
-    .Temporibus-team-four {
+    .temporibus-team-four {
       position: absolute;
       top: 65%;
       left: 38%;
     }
 
-    .Temporibus-team-five {
+    .temporibus-team-five {
       position: absolute;
       top: 50%;
       left: 60%;
     }
 
-    .Temporibus-team::after {
+    .temporibus-team::after {
       position: absolute;
       content: "";
       width: 100%;
@@ -960,10 +952,10 @@ padding-bottom: 55px;
       background-image: url(./images/oval-team.png);
       background-repeat: no-repeat;
       top: -7%;
-      left: 77%;
+      left: 80%;
     }
 
-    .Temporibus::before {
+    .temporibus::before {
       background: url(./images/oval-nine.png) 110% 110% no-repeat, url(./images/oval-ten.png) 0% 130% no-repeat;
       z-index: 5;
     } 
@@ -997,24 +989,30 @@ padding-bottom: 55px;
     .assumenda {
       padding: 45px 0 60px;
     }
-
-    .itaque {
-      padding: 0 0 26px 29px;
-      background-image: url(./images/assumenda-two.png);
-      left: 2%;
+    .itaque-earum {
+      background-image: url(./images/assumenda.png);
+      background-repeat: no-repeat;
       width: 329px;
       height: 316px;
+      background-size: 329px;
+      padding: 0 0 26px 29px;
     }
+  
+    .itaque::before {
+      position: absolute;
+      content: "";
+      background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+      width: 329px;
+      height: 316px;
+      border-radius: 3px;
+      right: 15px;
+      top: 5%;
+    
+    }
+    
 
     .aliquid {
       padding-bottom: 80px;
-    }
-
-    .assumenda::before {
-      width: 329px;
-      height: 316px;
-      left: 3%;
-      top: 56.80%;
     }
 
     .itaq-p {
@@ -1023,6 +1021,11 @@ padding-bottom: 55px;
 
     .contact-us {
       text-align: center;
+      padding-bottom: 64px;
+    }
+    
+    .my-services {
+      padding-top: 61px;
     }
 
    .footer-navigation {
